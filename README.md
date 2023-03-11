@@ -3,8 +3,8 @@
 Build an image for Raspberrypi3 using Yocto project
 
 ## Steps 
-1. Install Needed Tools
-2. Download Dependencies 
+1. Install needed tools
+2. Download dependencies 
 3. Clone Poky
 4. Add meta layers for raspberry pi 
 5. Setup build config
@@ -113,7 +113,7 @@ VIRTUAL-RUNTIME:init_manager = "systemd"
 VIRTUAL-RUNTIME:initscripts = ""
 IMX_DEFAULT_DISTRO_FEATURES:append = " systemd"
  ```
-> ## Or add python:
+> ## Or add python only:
   ```
  IMAGE_INSTALL:append = " python3 python3-pip rpi-gpio raspi-gpio"
   ```
